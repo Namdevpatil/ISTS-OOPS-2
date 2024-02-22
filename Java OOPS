@@ -1,0 +1,64 @@
+Class properties:
+
+1. Fields/variables:
+
+In a class we have two different types of fields/variables
+
+	=> non-static/instance fields/variables: 
+	=> static/class fields/variables
+
+2. Behavior/Methods:
+
+In a class we have two different types of Methods
+
+	=> non-static/instance Methods
+	=> static/class Methods
+
+3. Constructors: to initialize an object/instance(fields of class).
+
+-> it is a special method, use to initialize an object/instance(fields of class).
+-> class name and constructor name must be same.
+-> constructor do not have return type, but it return current class.
+-
+In java we have two types of constructors,
+
+	=> default/no-parameterized constructor
+	Note: if we are not declaring any constructor in a class, then compiler add default constructor.
+	=> parameterized constructor
+
+this: to diferenciate the class fields from the method/constructor parameters.
+====
+
+Note: this keyword always points to class fields.
+
+for example,
+
+public class Dog 
+{
+	
+	private String dogName;//class field
+
+	public Dog(String dogName)
+	{
+		this.dogName=dogName;
+	}
+	
+	@Override
+	public String toString()
+	{
+		return "Dog [dogName=" + dogName + "]";
+	}	
+	
+}
+
+blocks:
+======
+
+1. static block: to initialize static fields
+
+2. instance initializer block: to initialize non-static fields
+
+Constructor chaining: 
+====================
+
+this() method
